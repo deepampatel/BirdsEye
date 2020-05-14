@@ -33,7 +33,7 @@ In the order (TopLeft, TopRight, BottomLeft, BottomRight)
 ```bash
 python calliberate.py --image calliberation_image.jpg 
 ```
-<img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/pointselection.png" width="320">
+<img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/pointselectionn.png" width="320">
 
 
 The output will be a numpy .npy transformation matrix file. Which you can use for further development.
