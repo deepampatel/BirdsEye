@@ -14,8 +14,8 @@ In Perspective Transformation, we can change the perspective of a given image or
      <td>Changed Perpective</td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/room.png?token=AES2UWYVUJILJX7LEBDEN726YUIDS" width="320"></td>
-    <td><img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/transformed.png?token=AES2UWZNZBOQUATGTZJHBZS6YUIP6" width="320"></td>
+    <td><img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/room.png" width="320"></td>
+    <td><img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/transformed.png" width="320"></td>
   </tr>
  </table>
 For perspective transformation, you need a 3x3 transformation matrix. Straight lines will remain straight even after the transformation. To find this transformation matrix, you need 4 points on the input image and corresponding points on the output image. Among these 4 points, 3 of them should not be collinear. Then transformation matrix can be found by the function cv2.getPerspectiveTransform. Then apply cv2.warpPerspective with this 3x3 transformation matrix.
@@ -33,7 +33,7 @@ In the order (TopLeft, TopRight, BottomLeft, BottomRight)
 ```bash
 python calliberate.py --image calliberation_image.jpg 
 ```
-<img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/pointselection.png?token=AES2UW45X353PJXN6QXE2526YUO7A" width="320">
+<img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/pointselection.png" width="320">
 
 
 The output will be a numpy .npy transformation matrix file. Which you can use for further development.
