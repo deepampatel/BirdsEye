@@ -22,12 +22,19 @@ For perspective transformation, you need a 3x3 transformation matrix. Straight l
 
 
 #### To get the Transformation Matrix
+
+Install requirements
+```bash
+pip install -r requirements.txt
+```
+
 Run this command and select four points on the image. 
 In the order (TopLeft, TopRight, BottomLeft, BottomRight)
 ```bash
 python calliberate.py --image calliberation_image.jpg 
 ```
 <img src="https://raw.githubusercontent.com/deepampatel/BirdsEye/master/assets/pointselection.png?token=AES2UW45X353PJXN6QXE2526YUO7A" width="320">
+
 
 The output will be a numpy .npy transformation matrix file. Which you can use for further development.
 
@@ -41,3 +48,8 @@ To run the example :
 cd examples/movements/
 python person_birds_eye.py 
 ```
+
+In the above example the dots on black screen are the top view of people walking in the video. The flixxkering is because of the accuracy of the model that is used. This experiment was done using an ssd_mobilenet model. To use a model with higher accuracy in person detection task change this [line](https://github.com/deepampatel/BirdsEye/blob/master/examples/movements/person_birds_eye.py#L27).
+
+
+
