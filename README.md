@@ -49,7 +49,7 @@ cd examples/movements/
 python person_birds_eye.py 
 ```
 
-In the above example the dots on black screen are the top view of people walking in the video. The flixxkering is because of the accuracy of the model that is used. This experiment was done using an ssd_mobilenet model. To use a model with higher accuracy in person detection task change this [line](https://github.com/deepampatel/BirdsEye/blob/master/examples/movements/person_birds_eye.py#L27).
+In the above example the dots on black screen are the top view of people walking in the video. The flickering is because of the accuracy of the model that is used. This experiment was done using an ssd_mobilenet model. To use a model with higher accuracy in person detection task change this [line](https://github.com/deepampatel/BirdsEye/blob/master/examples/movements/person_birds_eye.py#L27).
 
 
 
